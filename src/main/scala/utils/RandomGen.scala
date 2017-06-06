@@ -9,13 +9,14 @@ class RandomGen extends js.Object
 
 object RandomGen {
   private def privateMethod(): Unit = {
-    println("I am private")
+    println("I am private, yea1")
   }
 
   private val rnd = new Random()
 
+  @JSExportStatic
   def publicMethod(): Unit = {
-    println("The public can see me!")
+    println(s"The public can see me! ${AjaxClient.version}")
     privateMethod()
   }
 

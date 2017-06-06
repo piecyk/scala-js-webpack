@@ -7,6 +7,11 @@ const options = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
+  resolveLoader: {
+    alias: {
+      'scalajs-loader': path.resolve(__dirname, 'scalajsLoader.js')
+    }
+  },
   module: {
     rules: [
       {
