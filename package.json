@@ -1,0 +1,24 @@
+{
+  "name": "scala-js-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "_node": "./node_modules/.bin/babel-node --max-old-space-size=4096",
+    "_webpack": "npm run -s _node -- ./node_modules/.bin/webpack",
+    "_server": "npm run -s _node -- ./node_modules/.bin/webpack-dev-server",
+    "repl": "npm run -s _node",
+    "help": "echo 'npm run [task] -- [arguments]', e.g. 'npm run _webpack -- --help'; echo for development 'npm start'",
+    "start": "npm run -s _server"
+  },
+  "author": "Damian Pieczynski",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "7.0.0-alpha.12",
+    "babel-core": "7.0.0-alpha.12",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "scalajs-loader": "^0.0.1",
+    "webpack": "3.0.0-rc.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
