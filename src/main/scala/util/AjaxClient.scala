@@ -1,5 +1,5 @@
 package util
 
 object AjaxClient {
-  def version: Double = 1.0
+  def version: Double = 1
 }

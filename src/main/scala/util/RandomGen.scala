@@ -9,7 +9,7 @@ class RandomGen extends js.Object
 
 object RandomGen {
   private def privateMethod(): Unit = {
-    println("I am private, yea1")
+    println("I am private")
   }
 
   private val rnd = new Random()

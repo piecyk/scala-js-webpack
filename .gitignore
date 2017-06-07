@@ -7,3 +7,5 @@ project/boot
 project/target
 project/project
 node_modules
+dist
+src/lib/bundle
